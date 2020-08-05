@@ -17,7 +17,7 @@
     )
     (:action push
         :parameters (?bunny ?box ?x ?y)
-        :precondition (and (bunny-position ?x) (low ?bunny) (box-position ?x) (low ?box) (is-bunny ?bunny) (is-box ?box))
+        :precondition (and (bunny-position ?x) (low ?bunny) (box-position ?x) (low ?box) (not (high bunny)) (is-bunny ?bunny) (is-box ?box))
         :effect (and (bunny-position ?y) (box-position ?y) (not (bunny-position ?x)) (not (box-position ?x)))
     )
     (:action climb-up

@@ -17,6 +17,7 @@
         (low box)
         (high carrots)
         (is-bunny bunny)
+        (is-box box)
     )
     (:goal
         (grasped carrots)
