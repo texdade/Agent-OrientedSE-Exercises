@@ -13,7 +13,10 @@
         (bunny-position room1)
         (carrots-position room2)
         (box-position room3)
-        (not (high rabbit))
+        (low bunny)
+        (low box)
+        (high carrots)
+        (is-bunny bunny)
     )
     (:goal
         (grasped carrots)
